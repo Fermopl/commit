@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+
+    @keyframes rotarcambiarcolor {
+    
+    0%{ 
+    transform: rotate(0);
+    background: green; 
+    }
+
+    25%{ 
+    transform: rotate(70deg);
+    background: pink; 
+    }
+
+    50%{ 
+    transform: rotate(20deg);
+    background: glime; 
+    }
+
+    100%{ 
+    transform: rotate(0);
+    background: green; 
+    }
+}
+
+.animar {
+    
+    width: 150px;
+    height: 150px;
+    background: green;
+    
+    animation-name: rotarcambiarcolor;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    }
+
+.t {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: all 2s;
+    /* transform
+    transform: translate(45px,100px);
+    
+    transform: translate(45px,100px) rotate(45deg) scale(5);
+    */
+}
+
+.t:hover {
+    
+    transform: translate(45px,100px) rotate(45deg) scale(1.5);
+    width: 300px;
+    background: blue;
+}
+
+/*.t {
+   overflow para q hace c el excedente, probar poner parrafos abajo de la forma y veo que la forma la esconde
+  vh: 100px; ver q valor ponerle, no llegué a leer
+    */
+    
+
+    /* overflow para q hace c el excedente, probar poner parrafos abajo de la forma y veo que la forma la esconde
+    overflow: hidden;
+    }
+    */
+
+html {
+    
+    scroll-behavior: smooth;
+}
+    a {
+    
+    display: inline-block;
+    padding: 10px 30px;
+    background: tomato;
+    color:white;
+    border-radius: 4px;
+    margin: 30px;
+    transition:background;
+}
+
+a:hover {
+    
+    background: rgb(0,25,25);
+    
+}
+
+    img {
+    margin: 30px;
+    transition:transform 0.5s; box-shadow: 0.5s;
+    /*para que primero se vea gris y al apoyarme en color, aca le pongo 1 y en hover 0 al gris*/
+    filter: grayscale(1);
+}
+
+    img:hover {
+    transform:scale(1.1);
+    filter: grayscale(0);
+    box-shadow: 2px 1px 5px rgba(0,0,0,0.6)
+}
+
+
+
+
+    
+
+
